@@ -6,204 +6,284 @@
   <head>
     <meta charset="utf-8">
 	<title>
-      AVF AndroidLanding Page
+      AVF Android Landing Page
   	</title>
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.1.css" type="text/css"/>
-  <link rel="stylesheet" href="css/avf.css"/>
-  <script src="mainjs/modernizr.custom.min.js"></script>
-  
-<!--
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.1.css" type="text/css"/>
+    <link rel="stylesheet" href="css/avf.css"/>
+    <script src="mainjs/modernizr.custom.min.js">
+    </script>
+    
+    <!--
 
 Howard Livingston
 AVF-with Jen Mccarrick 
 
 -->
-</head>
-
-<body class="backgroundImage">
-
-<!--AVF Landing Page-->
-     
-<div data-role="page" id="home">
-      
-      <header class="menu-wrapper">
-      		<h1>Avf Landing Page</h1>
-      </header>
-      <h1>Welcome to Howie's AVF APP! (Android)</h1>
-  			
-  		<!--Navigate to the main sections here-->
-  			<ul>
-          		<li><img src="images/books.png" class="sectionImages" alt="weeklyResearch">
-					<a href="#research" class="button" data-ajax="false">Weekly Research</a>
-  				</li>
-  			
-  			
-                <li><img src="images/environment.png" class="sectionImages" alt="environment">
-          			<a href="#environment" class="button" data-ajax="false">Environment</a>
-  			
-  				</li>
-  			
-          		 <li><img src="images/twitterIcon.png" class="sectionImages" alt="twitterIcon">
-          		 	<a href="#apiPage" class="button" data-ajax="false">Twitter API</a>
-  				</li>
-    		</ul>
-    <footer data-role="footer" data-position="fixed"></footer>
- </div>
-
+  </head>
+  
+  <body class="backgroundImage">
     
+    
+    
+    
+    <!--AVF Landing Page-->
+    
+    <div data-role="page" id="home">
+      
+  <header class="menu-wrapper">
+    <h1>
+      Avf Landing Page
+    </h1>
+  </header>
+  <h1>
+    Welcome to Howie's AVF APP! (Android)
+  </h1>
+  
+  <!--Navigate to the main sections here-->
+  <ul>
+    <li>
+      <img src="images/books.png" class="sectionImages" alt="weeklyResearch">
+      <a href="#research" class="button" data-ajax="false">
+        Weekly Research
+      </a>
+    </li>
+    
+    
+    <li>
+      <img src="images/environment.png" class="sectionImages" alt="environment">
+      <a href="#environment" class="button" data-ajax="false">
+        Environment
+      </a>
+      
+    </li>
+    
+    <li>
+      <img src="images/twitterIcon.png" class="sectionImages" alt="twitterIcon">
+      <a href="#apiPage" class="button" data-ajax="false">
+        Twitter API
+      </a>
+    </li>
+  </ul>
+  <footer data-role="footer" data-position="fixed">
+  </footer>
+  </div>
+  
+  
+  
+  
   <!--Weekly Research Page-->
+  
   <div data-role="page" id="research">
 	<header class="menu-wrapper">
-      	<h1>
-        	Research Page
-    	</h1>
+      <h1>
+        Research Page
+      </h1>
   	</header>
-  		<p>
-    		<a data-ajax="false" data-role="button" href="#home">
-      			Back Home
-    		</a>
-  		</p>
+    <p>
+      <a data-ajax="false" data-role="button" href="#home">
+        Back Home
+      </a>
+    </p>
     
     <!--Here are the weekly research assignments in collapsible sets-->
     
     <div data-role="collapsible" data-collapsed="true">
-        <h2 class="button">
-        	Week Two
-        </h2>
-          
+      <h2 class="button">
+        Week Two
+      </h2>
+      
     </div>
     <div data-role="collapsible" data-collapsed="true">
-        <h2 class="button">
-            Week Three
-        </h2>
+      <h2 class="button">
+        Week Three
+      </h2>
     </div>
 	<div data-role="collapsible" data-collapsed="true">
-          <h2 class="button">
-            Week Four
-          </h2>
+      <h2 class="button">
+        Week Four
+      </h2>
 	</div>
-
-    <footer data-role="footer" data-position="fixed"></footer>
-</div>
+    
+    <footer data-role="footer" data-position="fixed">
+    </footer>
+  </div>
+  
+  
+  
   
   <!--Environment page-->
   <div data-role="page" id="environment">
-		
-		<div class="menu-wrapper">
-      		<h4>Your Environment</h4>
-  		</div>
-  	  		<a data-role="button" href="#home" data-ajax="false">Back Home</a>
-    	
-    	<section id="weatherTitle">
-    		<h1>Your Weather</h1>
-    		<h5>Through an API</h5>
-    			<img src="images/localWeather.png" class="sectionImages" alt="weeklyResearch">
-    			
-    		<!--Displaying the local weather here-->
-    			
-		</section>
-		
-		<h1>Your Location</h1>
-		
-		<h5>Native Features</h5>
-		
+    
+    <div class="menu-wrapper">
+      <h4>
+        Your Environment
+      </h4>
+    </div>
+    <a data-role="button" href="#home" data-ajax="false">
+      Back Home
+    </a>
+    
+    <section id="weatherTitle">
+      <h1>
+        Your Weather
+      </h1>
+      <h5>
+        Through an API
+      </h5>
+      <img src="images/localWeather.png" class="sectionImages" alt="weeklyResearch">
+      
+      <!--Displaying the local weather here-->
+      
+    </section>
+    
+    <h1>
+      Your Location
+    </h1>
+    
+    <h5>
+      Native Features
+    </h5>
+    
 	<!--Navigate to the seperate native functions-->
-			<ul>
-                <li><img src="images/compass.png" class="sectionImages" alt="">
-          			<a href="#compassPage" class="button" data-ajax="false">Compass</a>
-  				</li>
-                
-                <li><img src="images/acc.png" class="sectionImages" alt="">
-          			<a href="#accPage" class="button" data-ajax="false">Accelerometer</a>
-  				</li>
-                
-                <li><img src="images/Geolocation.png" class="sectionImages" alt="">
-          			<a href="#geoPage" class="button" data-ajax="false">Geolocation</a>
-          		</li>
-  			</ul>
-    	
-    	<footer data-role="footer" data-position="fixed"></footer>
-	</div>
-
-<!--api page-->
-<div data-role="page" id="apiPage">
+    <ul>
+      <li>
+        <img src="images/compass.png" class="sectionImages" alt="">
+        <a href="#compassPage" class="button" data-ajax="false">
+          Compass
+        </a>
+      </li>
+      
+      <li>
+        <img src="images/acc.png" class="sectionImages" alt="">
+        <a href="#accPage" class="button" data-ajax="false">
+          Accelerometer
+        </a>
+      </li>
+      
+      <li>
+        <img src="images/Geolocation.png" class="sectionImages" alt="">
+        <a href="#geoPage" class="button" data-ajax="false">
+          Geolocation
+        </a>
+      </li>
+    </ul>
+    
+    <footer data-role="footer" data-position="fixed">
+    </footer>
+  </div>
+  
+  
+  
+  
+  <!--api page-->
+  <div data-role="page" id="apiPage">
 	<header data-role="header" data-position="fixed">
-		<h1>API Page</h1>
-	</header>
-			<a data-role="button" data-mini="true" href="#home" data-ajax="false">
-      				Back Home
-    		</a>
-	
-	<!--Display the tweet list here-->
-	<section id="apiTweetList">
-	<h5>First api</h5>
-
-	</section>
-	
- <footer data-role="footer" data-position="fixed"></footer>
-</div>
-
-<!--Compass page-->
-<div data-role="page" id="compassPage">
+      <h1>
+        API Page
+      </h1>
+  </header>
+  <a data-role="button" data-mini="true" href="#home" data-ajax="false">
+    Back Home
+  </a>
+  
+  <!--Display the tweet list here-->
+  <section id="apiTweetList">
+	<h5>
+      First api
+      </h5>
+      
+  </section>
+  
+  <footer data-role="footer" data-position="fixed">
+  </footer>
+  </div>
+  
+  
+  
+  
+  
+  <!--Compass page-->
+  <div data-role="page" id="compassPage">
 	<header data-role="header" data-position="fixed">
-		<h1>Compass Page</h1>
-	</header>
-			<a data-role="button" data-mini="true" href="#home" data-ajax="false">
-      				Back Home
-    		</a>
-	<section id="compassDisplay">
+      <h1>
+        Compass Page
+      </h1>
+  </header>
+  <a data-role="button" data-mini="true" href="#home" data-ajax="false">
+    Back Home
+  </a>
+  <section id="compassDisplay">
 	
-	<!--Display compass heading here-->
-  	
-  	</section>
-	
- <footer data-role="footer" data-position="fixed"></footer>
-</div>
-
-<!--Accelorometer page-->
-<div data-role="page" id="accPage">
+   <!--Display compass heading here-->
+      
+  </section>
+  
+  <footer data-role="footer" data-position="fixed">
+  </footer>
+  </div>
+  
+  
+  
+  
+  <!--Accelorometer page-->
+  <div data-role="page" id="accPage">
 	<header data-role="header" data-position="fixed">
-		<h1>Accelorometer Page</h1>
-	</header>
-			<a data-role="button" data-mini="true" href="#home" data-ajax="false">
-      				Back Home
-    		</a>
-	<section id="accDisplay">
+      <h1>
+        Accelorometer Page
+      </h1>
+  </header>
+  <a data-role="button" data-mini="true" href="#home" data-ajax="false">
+    Back Home
+  </a>
+  <section id="accDisplay">
 	
-	<!--Display Accelorometer information here-->
-
-	</section>
-	
- <footer data-role="footer" data-position="fixed"></footer>
-</div>
-
-<!--Geolocation page-->
-<div data-role="page" id="geoPage">
+  <!--Display Accelorometer information here-->
+      
+  </section>
+  
+  <footer data-role="footer" data-position="fixed">
+  </footer>
+  </div>
+  
+  
+  
+  
+  <!--Geolocation page-->
+  <div data-role="page" id="geoPage">
 	<header data-role="header" data-position="fixed">
-		<h1>Geolocation Page</h1>
-	</header>
-			<a data-role="button" data-mini="true" href="#home" data-ajax="false">
-      				Back Home
-    		</a>
-	<section id="geoDisplay">
+      <h1>
+        Geolocation Page
+      </h1>
+  </header>
+  <a data-role="button" data-mini="true" href="#home" data-ajax="false">
+    Back Home
+  </a>
+  <section id="geoDisplay">
 	
-	<!--Display Geolocation information here-->
-
-	</section>
-	
- <footer data-role="footer" data-position="fixed"></footer>
-</div>
-
+  <!--Display Geolocation information here-->
+      
+  </section>
+  
+  <footer data-role="footer" data-position="fixed">
+  </footer>
+  </div>
+  
+  
+  
+  
   <!-- JavaScript under here -->
-  <script src="mainjs/jquery-1.8.3.min.js"></script>
-  <script src="mainjs/jquery.mobile-1.2.0.min.js"></script>
-  <script type="text/javascript" src="mainjs/avf.js"></script>
-  <script type="text/javascript" src="cordova-2.7.0.js"></script>
+  <script src="mainjs/jquery-1.8.3.min.js">
+  </script>
+  <script src="mainjs/jquery.mobile-1.2.0.min.js">
+  </script>
+  <script type="text/javascript" src="mainjs/avf.js">
+  </script>
+  <script type="text/javascript" src="cordova-2.7.0.js">
+  </script>
   
   
   </body>
 </html>
-
